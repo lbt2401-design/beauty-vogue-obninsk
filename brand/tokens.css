@@ -1,0 +1,61 @@
+/* =========================================================
+   БРЕНД: Beauty Vogue (Бьюти ВОГ, Обнинск)
+   Единственный источник цветов, шрифтов и размеров для сайта.
+   В CSS сайта пишем только var(--...), без прямых #hex и названий шрифтов.
+   Идея бренда: журнальная страница с тропическим листом со стены салона:
+   графит вывески, зелёный лист, магента лака, светлый мрамор пола.
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Cormorant+Garamond:wght@500;600&display=swap');
+
+:root {
+  /* --- Цвета (контраст текста к фону — не меньше 4.5:1) --- */
+  --color-bg:            #f1ebe6; /* Мрамор: фон страницы */
+  --color-surface:       #faf6f3; /* Карточки, формы */
+  --color-tint:          #e4dad3; /* Фон выделенных секций */
+  --color-ink:           #26282c; /* Графит вывески: текст, заголовки, логотип */
+  --color-muted:         #5d5a5e; /* Второстепенный текст */
+  --color-line:          #cfc3bb; /* Линии, рамки полей */
+  --color-primary:       #1f4a3b; /* Тропический лист: кнопки, ссылки */
+  --color-primary-hover: #163629;
+  --color-on-primary:    #f6f1ec;
+  --color-highlight:     #b5365f; /* Магента лака: только декор, не для текста */
+  --color-inverse-bg:    #26282c;
+  --color-inverse-text:  #efe9e4;
+  --color-error:         #a3261f;
+  --color-success:       #2e6b4f;
+
+  /* --- Шрифты --- */
+  --font-head: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Manrope', 'Segoe UI', Roboto, Arial, sans-serif;
+
+  /* --- Размеры текста --- */
+  --fs-small: 0.875rem;
+  --fs-body:  1.0625rem;
+  --fs-lead:  1.3125rem;
+  --fs-h3:    1.5rem;
+  --fs-h2:    clamp(2rem, 1.5rem + 2vw, 3rem);
+  --fs-h1:    clamp(2.5rem, 1.6rem + 3.6vw, 4.5rem);
+
+  --fw-head: 500;
+  --lh-body: 1.6;
+  --lh-head: 1.05;
+  --measure: 62ch;
+
+  /* --- Скругления: журнальные, почти прямые --- */
+  --radius-s:    2px;
+  --radius-m:    4px;
+  --radius-pill: 999px;
+
+  /* --- Отступы --- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  --space-section: clamp(4rem, 3rem + 5vw, 7.5rem);
+
+  /* --- Фокус с клавиатуры --- */
+  --focus-ring: 0 0 0 3px var(--color-bg), 0 0 0 5px var(--color-primary);
+}
